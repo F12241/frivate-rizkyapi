@@ -111,6 +111,7 @@ Nomor saya (+${nomor}).`
     res.json({
       success: true,
       message: 'Email banding berhasil dikirim',
+      usedAccount: account.user,
       nomor: `+${nomor}`,
       messageId: info.messageId
     })
